@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tiro Parabólico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>📐 Calculadora de Tiro Parabólico</h1>
+        
+        <div class="input-group">
+            <label for="initialVelocity">Velocidad Inicial (v₀ en m/s):</label>
+            <input type="number" id="initialVelocity" value="20" min="0">
+        </div>
+
+        <div class="input-group">
+            <label for="angle">Ángulo (θ en grados):</label>
+            <input type="number" id="angle" value="30" min="0" max="90">
+        </div>
+
+        <div class="input-group">
+            <label for="gravity">Gravedad (g en m/s²):</label>
+            <input type="number" id="gravity" value="9.81" min="0">
+        </div>
+        
+        <button onclick="calculateProjectile()">Calcular</button>
+
+        <div class="results">
+            <h2>Resultados:</h2>
+            <p>Alcance Máximo (R): <span id="range">--</span> m</p>
+            <p>Altura Máxima (hₘáₓ): <span id="maxHeight">--</span> m</p>
+            <p>Tiempo de Vuelo (tᵥ): <span id="timeOfFlight">--</span> s</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
