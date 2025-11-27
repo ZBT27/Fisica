@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Aceleración Angular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <a href="index.html" class="back-link">← Volver al Menú</a>
+        <h1>Calculadora de Aceleración Angular</h1>
+        
+        <div class="input-group">
+            <label for="initialAngularVelocity">Velocidad Angular Inicial (rad/s):</label>
+            <input type="number" id="initialAngularVelocity" value="5">
+        </div>
+        
+        <div class="input-group">
+            <label for="finalAngularVelocity">Velocidad Angular Final (rad/s):</label>
+            <input type="number" id="finalAngularVelocity" value="15">
+        </div>
+        
+        <div class="input-group">
+            <label for="time">Tiempo (s):</label>
+            <input type="number" id="time" value="5" min="0">
+        </div>
+        
+        <button onclick="calculateAngularAcceleration()">Calcular</button>
+
+        <div class="results">
+            <h2>Resultado:</h2>
+            <p>Aceleración Angular: <span id="angularAccelerationResult">--</span> rad/s²</p>
+        </div>
+    </div>
+    <script src="angular_acceleration.js"></script>
+</body>
+</html>

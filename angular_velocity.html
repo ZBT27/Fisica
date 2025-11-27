@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Velocidad Angular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <a href="index.html" class="back-link">← Volver al Menú</a>
+        <h1>Calculadora de Velocidad Angular</h1>
+        
+        <div class="input-group">
+            <label for="angularPosition">Posición Angular (en rad):</label>
+            <input type="number" id="angularPosition" value="10" min="0">
+        </div>
+        
+        <div class="input-group">
+            <label for="time">Tiempo (s):</label>
+            <input type="number" id="time" value="2" min="0">
+        </div>
+        
+        <button onclick="calculateAngularVelocity()">Calcular</button>
+
+        <div class="results">
+            <h2>Resultado:</h2>
+            <p>Velocidad Angular: <span id="angularVelocityResult">--</span> rad/s</p>
+        </div>
+    </div>
+    <script src="angular_velocity.js"></script>
+</body>
+</html>

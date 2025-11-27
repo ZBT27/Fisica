@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Caída Libre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <a href="index.html" class="back-link">← Volver al Menú</a>
+        <h1>Calculadora de Caída Libre</h1>
+        
+        <div class="input-group">
+            <label for="initialHeight">Altura Inicial (m):</label>
+            <input type="number" id="initialHeight" value="100" min="0">
+        </div>
+
+        <div class="input-group">
+            <label for="gravity">Gravedad (m/s²):</label>
+            <input type="number" id="gravity" value="9.81" min="0">
+        </div>
+        
+        <button onclick="calculateFreeFall()">Calcular</button>
+
+        <div class="results">
+            <h2>Resultados:</h2>
+            <p>Tiempo de Caída : <span id="timeOfFall">--</span> s</p>
+            <p>Velocidad Final: <span id="finalVelocity">--</span> m/s</p>
+        </div>
+    </div>
+    <script src="free_fall.js"></script>
+</body>
+</html>

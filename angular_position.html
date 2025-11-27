@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Posición Angular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <a href="index.html" class="back-link">← Volver al Menú</a>
+        <h1>Calculadora de Posición Angular</h1>
+        
+        <div class="input-group">
+            <label for="initialAngularPosition">Posición Angular Inicial (en rad):</label>
+            <input type="number" id="initialAngularPosition" value="0">
+        </div>
+        
+        <div class="input-group">
+            <label for="angularVelocity">Velocidad Angular (rad/s):</label>
+            <input type="number" id="angularVelocity" value="5">
+        </div>
+
+        <div class="input-group">
+            <label for="time">Tiempo (s):</label>
+            <input type="number" id="time" value="3" min="0">
+        </div>
+        
+        <button onclick="calculateAngularPosition()">Calcular</button>
+
+        <div class="results">
+            <h2>Resultado:</h2>
+            <p>Posición Angular: <span id="angularPositionResult">--</span> rad</p>
+        </div>
+    </div>
+    <script src="angular_position.js"></script>
+</body>
+</html>
